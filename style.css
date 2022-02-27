@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, hsl(201, 67%, 33%), hsl(32, 14%, 82%));
+}
+
+#box_calculator {
+  width: 300px;
+  min-height: 500px;
+  background-color: hsl(0, 6%, 33%);
+  margin: 40px auto;
+  border-radius: 20px;
+  padding-top: 15px;
+  box-shadow: 10px 10px 0px rgb(31, 31, 31);
+}
+
+#previous_res {
+  font-size: 1.4rem;
+}
+
+#current_res {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#res {
+  min-height: 100px;
+  background-color: hsl(83, 85%, 87%);
+  border-radius: 20px;
+  padding: 10px;
+  border: 3px solid hsl(76, 9%, 51%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.row {
+  /* min-height: 40px; */
+  align-self: flex-end;
+}
+
+button {
+  background-color: hsl(194, 18%, 42%);
+  border-radius: 25px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0px 0px 8px black;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#keyboard {
+  margin-top: 1.3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.6em;
+}
+
+#zero {
+  grid-column: span 2;
+  width: 130px;
+}
+
+#clear {
+  grid-column: span 2;
+  width: 130px;
+}
+
+button:hover {
+  background-color: hsl(195, 31%, 36%);
+}

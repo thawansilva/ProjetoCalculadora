@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="box_calculator">
+        <div id="res" class="container">
+            <div data-previous class="row" id="previous_res"></div>
+            <div data-current class="row" id="current_res"></div>
+        </div>
+        <div id="keyboard" class="container">
+            <button data-clear-all class="clear_item" id="clear">CE</button>
+            <button data-delete class="del_item" id="del">C</button>
+            <button data-operator class="operator_item" id="div">&#247;</button>
+            <button data-number class="number_item">7</button>
+            <button data-number class="number_item">8</button>
+            <button data-number class="number_item">9</button>
+            <button data-operator class="operator_item" id="mul">x</button>
+            <button data-number class="number_item">4</button>
+            <button data-number class="number_item">5</button>
+            <button data-number class="number_item">6</button>
+            <button data-operator class="operator_item">-</button>
+            <button data-number class="number_item">1</button>
+            <button data-number class="number_item">2</button>
+            <button data-number class="number_item">3</button>
+            <button data-operator class="operator_item" id="sum">+</button>
+            <button data-number class="number_item" id="zero">0</button>
+            <button data-number class="number_item">.</button>
+            <button data-equal id="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
